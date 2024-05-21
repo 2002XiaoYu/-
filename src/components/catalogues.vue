@@ -32,12 +32,11 @@
 
 <script lang="ts" setup>
 import { defineProps } from 'vue'
-import type Node from 'element-plus/es/components/tree/src/model/node'
-import type { TreeNode, TreeData } from 'element-plus';
-import { More } from '@element-plus/icons-vue'
 import { ref } from 'vue';
 import { ElMessage } from 'element-plus'
-import { ArrowDown } from '@element-plus/icons-vue'
+import { More , ArrowDown} from '@element-plus/icons-vue'
+import type { TreeNode } from 'element-plus';
+import type Node from 'element-plus/es/components/tree/src/model/node'
 
 const props = defineProps<{
   dataSource: Node[],
