@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import catalogues from "@/components/catalogues.vue"
-import {dataSource,onCreate ,onRemove ,onRename } from "@/assets/treeData.ts"
+import {dataSource,onCreate ,onRemove ,onRename } from "@/assets/treeData"
 
 
 </script>

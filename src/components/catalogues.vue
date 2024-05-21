@@ -38,12 +38,18 @@ import { More , ArrowDown} from '@element-plus/icons-vue'
 import type { TreeNode } from 'element-plus';
 import type Node from 'element-plus/es/components/tree/src/model/node'
 
+interface Tree {
+  id: number
+  label: string
+  children?: Tree[]
+}
+
 const props = defineProps<{
-  dataSource: Node[],
+  dataSource: Tree[],
   onCreate: Function,
   onRemove: Function,
   onRename: Function,
-  handleCommand: Function
+  handleCommand?: Function
 }>()
 
 
